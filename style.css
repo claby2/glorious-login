@@ -1,0 +1,105 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth;
+    /* background-color: #2b303a; */
+	background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 500% 500%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #435058;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.box h1{
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.box input[type = "username"], .box input[type = "password"]{
+    display: block;
+    margin: 10px 0 10px 0;
+    color: #FFFFFF;
+    background: none;
+    font-size: 1.2em;
+    width: 250px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.1s;
+    border: solid;
+    border-color: #2f96be;
+}
+
+.box input[type = "username"]:focus, .box input[type = "password"]:focus{
+    border: solid;
+    border-color: #4aad59;
+}
+
+.box input[type = "submit"]{
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: solid;
+    border-color: #4aad59;
+    background: none;
+    padding: 10px 20px 10px 20px;
+    transition: 0.1s;
+}
+
+.box input[type = "submit"]:hover{
+    cursor: pointer;
+    background-color: #4aad59;
+}
+
+canvas {
+    background: 
+      linear-gradient(
+        hsl(200, 50%, 80%) 0%, 
+        hsl(200, 30%, 95%) 75%)
+    ;
+    display: block;
+  }
+  
+  div {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: url(https://jackrugile.com/images/misc/skyline-texture.png);
+  }
